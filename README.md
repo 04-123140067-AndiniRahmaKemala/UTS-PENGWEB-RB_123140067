@@ -1,4 +1,4 @@
-# Digit 7 - Music Explorer
+# Music Explorer
 
 **Proyek Ujian Tengah Semester (UTS)**
 
