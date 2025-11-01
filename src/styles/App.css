@@ -1,0 +1,103 @@
+/* src/styles/App.css - Tampilan Keren */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e; 
+    color: #e0e0e0; 
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 30px; 
+    background-color: #16213e; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+}
+
+.header {
+    grid-column: 1 / -1; 
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0f3460;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #e94560; 
+    font-size: 2.8em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin-bottom: 30px;
+    background-color: #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-form input[type="search"],
+.search-form select {
+    flex-grow: 1; 
+    padding: 12px 15px;
+    border: 1px solid #4a4a6e; 
+    border-radius: 8px;
+    background-color: #2e3b5e; 
+    color: #e0e0e0;
+}
+
+.search-form button {
+    padding: 12px 25px;
+    background-color: #e94560; 
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0; 
+    background-color: #0f3460; 
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+thead th {
+    background-color: #e94560; 
+    color: white;
+    padding: 15px;
+}
+
+.track-artwork {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sidebar {
+    background-color: #1a1a2e;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    color: #e94560; 
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: 1fr; 
+    }
+}
